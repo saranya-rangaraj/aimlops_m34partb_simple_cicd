@@ -1,0 +1,17 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./iris_model *
+
+include iris_model/datasets/iris.csv
+include iris_model/trained_models/*.pkl
+include iris_model/VERSION
+include iris_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
